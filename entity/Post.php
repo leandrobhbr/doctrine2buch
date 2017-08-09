@@ -25,14 +25,14 @@ class Post
     /** @Column(type="string") */
     private $content;
 
-    public function setUserId($user_id)
+    public function setUser($user)
     {
-        $this->user_id = $user_id;
+        $this->$user = $user;
     }
 
-    public function getUserId()
+    public function getUser()
     {
-        return $this->user_id;
+        return $this->$user;
     }
 
     public function setContent($content)
